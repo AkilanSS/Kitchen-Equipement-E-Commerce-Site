@@ -24,6 +24,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 body{
     margin: 0;
+    display: flex;
+    flex-direction: column;
     
 }
 
@@ -99,9 +101,8 @@ header{
 
     background-color: #E9E4DD;
     color:#383029;
-    padding-top: 40px;
+    padding-top: 45px;
     nav{
-
         display: flex;
         margin-left: 40px;
         align-items: center;
@@ -123,7 +124,6 @@ header{
     section{
         padding-top: 40vh;
         padding-bottom: 3vh;
-
         h1{
             max-width: 500px;
             font-family:'Triumvirate CG Inserat Regular';
@@ -141,11 +141,45 @@ header{
 
             font-family: "Triumvirate CG Comp Regular" ;
             line-height: 12pt;
-            letter-spacing: 1pt;
-
-            
-            
+            letter-spacing: 1pt;            
         }
 
+    }
+}
+
+#body-sec-1{
+    background-color: #DED8C5;
+    padding-top: 80px;
+    padding-bottom: 40px;
+
+    h2{
+        margin-top: 0;
+        font-family: 'Triumvirate CG Inserat Regular';
+        font-size: 32pt;
+        text-align: center;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+
+        letter-spacing: 2px;
+        color: #383029;
+
+        transform: scaleY(1.2);
+        transform: scaleX(1.1);
+
+    }
+
+    nav {
+        text-align: center;
+        a{
+            text-decoration: none;
+            margin-left: 20px ;
+            margin-right: 20px;
+
+            color: #383029;
+
+            font-family: "Triumvirate CG Comp Regular";
+            font-size: 15pt;
+        }
     }
 }
