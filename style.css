@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'Triumvirate CG Comp Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Triumvirate CG Comp Regular'), url('src/triumviratecgcomp.woff') format('woff');
+    }
+    
+
+@font-face {
+    font-family: 'Triumvirate CG Inserat Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Triumvirate CG Inserat Regular'), url('src/Triumvirate CG Inserat.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Triumvirate CG ExtraComp Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Triumvirate CG ExtraComp Regular'), url('src/triumviratecgextracomp.woff') format('woff');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+body{
+    margin: 0;
+    
+}
+
+header{
+    display: flex;
+    
+}
+
+#right-head-ctn{
+    display: flex;
+    background-color: #E9E4DD;
+    
+    .num-ctn{
+        padding: 30px;
+        padding-top: 18px;
+
+        border-style: solid;
+        border-right-color: #383029; 
+        border-left: none;
+        border-top:none;
+        border-bottom:none;
+
+        display: flex;
+        flex-direction: column;
+
+        font-family: "Triumvirate CG Comp Regular";
+        font-size: 15pt;
+
+        .num-ctn-text{
+            position: relative;
+            top: 30px;
+
+        }
+
+        .num-ctn-text2{
+            writing-mode:vertical-rl;
+            text-orientation:mixed;
+            transform: rotate(180deg);
+
+            margin-bottom: 20px;
+        }
+        
+    }
+    #num-ctn1{
+        border-left: #383029 solid;
+    }
+
+   
+    a {
+        color:#E9E4DD;
+        background-color: #383029;
+        text-decoration: none;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 600;
+
+        #signin-text{
+            margin: 30px;
+
+            position: relative;
+            top:48px;
+
+            padding: 6px;
+            padding-right: 32px;
+            padding-left: 32px;
+            border: #E9E4DD 1px solid;
+            font-size: 12pt;
+        }
+    }
+}
+
+#left-head-ctn{
+    flex: 3;
+
+    background-color: #E9E4DD;
+    color:#383029;
+    padding-top: 40px;
+    nav{
+
+        display: flex;
+        margin-left: 40px;
+        align-items: center;
+        #head-txt{
+            font-family: "Triumvirate CG Comp Regular";
+            font-size: 25pt;
+            font-style: italic;
+        }
+
+        a{
+            text-decoration: none;
+            font-family: "Triumvirate CG Comp Regular";
+            font-size: 15pt;
+            margin-right: 40px;
+            color:#383029;
+        }
+    }
+
+    section{
+        padding-top: 40vh;
+        padding-bottom: 3vh;
+
+        h1{
+            max-width: 500px;
+            font-family:'Triumvirate CG Inserat Regular';
+            font-size: 100pt;
+            margin: 40px;
+            line-height: 100pt;
+        }
+
+        p{
+            max-width: 200px;
+            position: relative;
+
+            left: 500px;
+            top: 80px;
+
+            font-family: "Triumvirate CG Comp Regular" ;
+            line-height: 12pt;
+            letter-spacing: 1pt;
+
+            
+            
+        }
+
+    }
+}
