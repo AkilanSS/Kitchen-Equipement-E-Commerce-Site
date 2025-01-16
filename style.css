@@ -1,27 +1,20 @@
 @font-face {
-    font-family: 'Triumvirate CG Comp Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Triumvirate CG Comp Regular'), url('src/triumviratecgcomp.woff') format('woff');
-    }
-    
-
+    font-family: 'Stratos-Bold';
+    src: url("src/fonts/Stratos-Bold.ttf") format('truetype');
+}
 @font-face {
-    font-family: 'Triumvirate CG Inserat Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Triumvirate CG Inserat Regular'), url('src/Triumvirate CG Inserat.woff') format('woff');
+    font-family: 'Stratos-BlackItalic';
+    src: url("src/fonts/Stratos-BlackItalic.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'Stratos-SemiBold';
+    src: url("src/fonts/Stratos-SemiBold.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'Stratos-Regular';
+    src: url("src/fonts/Stratos-Regular.ttf") format('truetype');
 }
 
-
-@font-face {
-    font-family: 'Triumvirate CG ExtraComp Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Triumvirate CG ExtraComp Regular'), url('src/triumviratecgextracomp.woff') format('woff');
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 body{
     margin: 0;
     display: flex;
@@ -51,12 +44,12 @@ header{
         display: flex;
         flex-direction: column;
 
-        font-family: "Triumvirate CG Comp Regular";
+        font-family: "Stratos-Bold";
         font-size: 15pt;
 
         .num-ctn-text{
             position: relative;
-            top: 30px;
+            top: 29px;
 
         }
 
@@ -73,27 +66,40 @@ header{
         border-left: #383029 solid;
     }
 
+    #sign-in-ctn{
+        background-color: #383029;
+    }
    
     a {
         color:#E9E4DD;
-        background-color: #383029;
         text-decoration: none;
-        font-family: 'Oswald', sans-serif;
-        font-weight: 600;
+        font-family: 'Stratos-Regular';
+        font-weight: 400;
 
-        #signin-text{
-            margin: 30px;
+        position: relative;
+        top: 50px;
 
-            position: relative;
-            top:48px;
+        border: #E9E4DD 1px solid;
+        font-size: 12pt;
 
-            padding: 6px;
-            padding-right: 32px;
-            padding-left: 32px;
-            border: #E9E4DD 1px solid;
-            font-size: 12pt;
-        }
+        padding: 16px;
+        padding-right: 40px;
+        padding-left: 40px;
+
+        margin-right: 30px;
+        margin-left: 30px;
+        
+        transition:color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+        
     }
+
+    a:hover{
+        color:#383029;
+        background-color: #E9E4DD;
+        border-color:#383029;
+    }
+
+   
 }
 
 #left-head-ctn{
@@ -101,20 +107,20 @@ header{
 
     background-color: #E9E4DD;
     color:#383029;
-    padding-top: 45px;
+    padding-top: 34px;
     nav{
         display: flex;
-        margin-left: 40px;
+        margin-left: 48px;
         align-items: center;
         #head-txt{
-            font-family: "Triumvirate CG Comp Regular";
-            font-size: 25pt;
+            font-family: "Stratos-BlackItalic";
+            font-size: 30pt;
             font-style: italic;
         }
 
         a{
             text-decoration: none;
-            font-family: "Triumvirate CG Comp Regular";
+            font-family: "Stratos-Bold";
             font-size: 15pt;
             margin-right: 40px;
             color:#383029;
@@ -126,22 +132,22 @@ header{
         padding-bottom: 3vh;
         h1{
             max-width: 500px;
-            font-family:'Triumvirate CG Inserat Regular';
-            font-size: 100pt;
+            font-family:'Stratos-Bold';
+            font-size: 120pt;
             margin: 40px;
             line-height: 100pt;
         }
 
         p{
-            max-width: 200px;
+            max-width: 225px;
             position: relative;
 
-            left: 500px;
-            top: 80px;
+            left: 550px;
+            top: 100px;
 
-            font-family: "Triumvirate CG Comp Regular" ;
-            line-height: 12pt;
-            letter-spacing: 1pt;            
+            font-family: "Stratos-SemiBold";
+            font-size: 15pt;       
+            line-height: 1.2rem;   
         }
 
     }
@@ -149,23 +155,20 @@ header{
 
 #body-sec-1{
     background-color: #DED8C5;
-    padding-top: 80px;
+    padding-top: 120px;
     padding-bottom: 40px;
 
     h2{
         margin-top: 0;
-        font-family: 'Triumvirate CG Inserat Regular';
-        font-size: 32pt;
+        font-family: 'Stratos-Bold';
+        font-size: 72pt;
         text-align: center;
-        max-width: 400px;
+        max-width: 800px;
         margin-left: auto;
         margin-right: auto;
-
-        letter-spacing: 2px;
+        margin-bottom: 30px;
         color: #383029;
-
-        transform: scaleY(1.2);
-        transform: scaleX(1.1);
+        line-height: 0.86em;
 
     }
 
@@ -178,8 +181,215 @@ header{
 
             color: #383029;
 
-            font-family: "Triumvirate CG Comp Regular";
-            font-size: 15pt;
+            font-family: "Stratos-Bold";
+            font-size: 18pt;
+
+            padding:5px;
+        }
+        a {
+            position: relative;
+            text-decoration: none;
+          }
+          
+          a::after {
+            content: '';
+            position: absolute;
+            width: 30%;
+            height: 3px;
+            bottom: -3px;
+            left: 5px;
+            background-color: currentColor;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+          }
+          
+          a:hover::after {
+            transform: scaleX(1);
+          }
+    }
+}
+
+#body-sec-2{
+    background-color: #DED8C5;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+
+    #item-ctn{
+        display: flex;
+        gap: 30px;
+        
+        .item-sub-ctn{
+            flex-grow: 1;
+            padding: 30px;
+
+            background-color: #F0EAE3;
+
+            .sub-ctn-top {
+                display: flex;
+                margin-bottom: 50px;
+                p{
+                    margin: 0;
+                    font-family: "Stratos-Bold";
+                    font-size: 18pt;
+                    max-width: 7ch;
+                    line-height: 22px;
+                }
+            }
+
+            .sub-ctn-img{
+                display: flex;
+                img{
+                    margin: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                    height: 400px;
+                    width: auto;
+                }
+                .img-hgt{
+                    height: 400px;
+                    width: auto;
+                }
+            }
+
+            .sub-ctn-bottom{
+                display: flex;
+                margin-top: 80px;
+                margin-right: 20px;
+                p{
+                    margin: 0;
+                    font-family: "Stratos-Bold";
+                    font-size: 25pt;
+                    max-width: 80px;
+                    
+                }
+
+                #sub-ctn-text-2{
+                    font-size: 25pt;
+                    line-height: 28px;
+                }
+
+                #sub-ctn-text-3{
+                    align-self:flex-end;
+                    font-size: 16pt;
+                }
+            }
+        }
+
+        #item-sub-ctn1{
+            max-width: fit-content;
         }
     }
+
+    #view-all{
+        font-family: 'Stratos-Regular';
+        text-decoration: none;
+        color: #F0EAE3;
+        background-color: #383029;
+        padding:15px;
+        padding-right: 60px;
+        padding-left: 60px;
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+#body-sec-3{
+    background-color: #F0EAE3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    #outline-txt{
+        -webkit-text-stroke: #383029;
+        -webkit-text-stroke-width: 2px;
+        color: #F0EAE3;
+        font-family:'Stratos-Bold';
+        font-size: 120pt;
+        line-height: 100pt;
+
+        max-width: 12ch;
+        text-align: center;
+
+    }
+    #olt-adj{
+        position: relative;
+        left: 14px;
+    }
+
+    #sec-3-imgs{
+        #card1{
+            height: 600px;
+            width: auto;
+
+            position:relative;
+            bottom: 40px;
+            left: 90px;
+            rotate: -5deg;
+
+            z-index: 1;
+        }
+
+        #card2{
+            height: 500px;
+            width: auto;
+
+            position:relative;
+            top:60px;
+            
+            rotate: +5deg;
+
+            z-index: 2;
+        }
+    }
+
+    h1{
+        color:#383029;
+        margin: 0;
+        font-family:'Stratos-Bold';
+        font-size: 120pt;
+        line-height: 100pt;
+        max-width: 12ch;
+        text-align: center;
+        z-index: 3;
+    }
+    
+}
+
+#body-sec-4{
+    display: flex;
+    background-color: #F0EAE3;
+    div{
+        flex-grow: 1;
+        text-align: center;
+        padding:100px;
+        border-top: #383029 solid;
+        border-bottom: #383029 solid;
+        border-left: #383029 solid;
+
+        a{
+            display: inline-block;
+            font-family: 'Stratos-SemiBold';
+            font-size: 20pt;
+            text-decoration: none;
+            color: #383029;
+            transform: scale(1);
+            transition: transform 0.2s ease;
+        }
+        a:hover{
+            transform: scale(1.5);
+        }
+    }
+
+    
+
+    
+    
+
+
 }
