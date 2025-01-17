@@ -15,6 +15,11 @@
     src: url("src/fonts/Stratos-Regular.ttf") format('truetype');
 }
 
+html{
+    scroll-behavior: smooth;
+    background-color: #F0EAE3;
+}
+
 body{
     margin: 0;
     display: flex;
@@ -385,11 +390,90 @@ header{
             transform: scale(1.5);
         }
     }
+}
 
+#foot-sec-1{
+    display: flex;
+    background-color: #F0EAE3;
+    padding: 40px;
+    padding-top: 80px;
+    #left-ctn{
+        h4{
+            font-family: 'Stratos-SemiBold';
+            font-size: 24pt;
+            max-width: 16ch;
+            line-height: 1.8rem;
+        }
+        #inp-box{
+            font-family: 'Stratos-SemiBold';
+            color: #383029;
+            background-color: #F0EAE3;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 12px;
+            padding-right: 50px;
+            border: #383029 solid 1px;
+
+            float: left;
+        }
+
+        #inp-btn{
+            padding: 10px;
+            padding-bottom: 11px;
+            background-color: #383029;
+            color: #F0EAE3;
+            border: none;
+
+            float: left;
+
+            font-family: 'Stratos-Regular';
+            font-size: 8pt;
+        }
+    }
+    #right-ctn{
+        table{
+            td, th{
+                text-align: right;
+                padding-left: 80px;
+                padding-bottom: 8px;
+                font-family: 'Stratos-SemiBold';
+                font-size: 14pt;
+            }
+            th{
+                font-family: 'Stratos-Bold';
+                padding-bottom: 12px;
+            }
+        }
+    }
+}
+#foot-sec-2{
+
+    div{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+
+        padding-top: 50px;
+
+        font-family: 'Stratos-BlackItalic';
+        font-size: 340pt;
+
+        background-color: #F0EAE3;
+        color: #383029;
+
+        line-height: 25rem;
+
+
+    }
+}
+#foot-sec-3{
+    display: flex;
     
+    background-color: #F0EAE3;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
 
-    
-    
-
-
+    color: #383029;
+    font-family: 'Stratos-Bold';
 }
